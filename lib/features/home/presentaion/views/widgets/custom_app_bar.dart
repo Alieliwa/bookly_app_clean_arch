@@ -8,9 +8,11 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: MediaQuery.of(context).size.width * .08,
-        vertical: MediaQuery.of(context).size.height * .08,
+      padding: EdgeInsets.only(
+        left: MediaQuery.of(context).size.width * .08,
+        right: MediaQuery.of(context).size.width * .08,
+        top: MediaQuery.of(context).size.height * .08,
+        bottom: MediaQuery.of(context).size.height * .04,
       ),
       child: Row(
         children: [
@@ -19,7 +21,10 @@ class CustomAppBar extends StatelessWidget {
             height: MediaQuery.of(context).size.height * .025,
           ),
           Spacer(),
-          Icon(FontAwesomeIcons.magnifyingGlass),
+          Icon(
+            FontAwesomeIcons.magnifyingGlass,
+            size: MediaQuery.of(context).size.width * .06,
+          ),
         ],
       ),
     );
