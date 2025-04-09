@@ -3,7 +3,6 @@ import 'package:bookly_app_clean_arch/core/utils/assets_data.dart';
 import 'package:bookly_app_clean_arch/features/Splash/presentation/views/widgets/sliding_text.dart';
 import 'package:bookly_app_clean_arch/features/home/presentaion/views/home_view.dart';
 import 'package:flutter/material.dart';
-import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 
 class SplashViewBody extends StatefulWidget {
