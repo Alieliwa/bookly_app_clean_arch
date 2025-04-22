@@ -20,7 +20,7 @@ class CustomAppBar extends StatelessWidget {
             AssetsData.logo,
             height: MediaQuery.of(context).size.height * .025,
           ),
-          Spacer(),
+          const Spacer(),
           Icon(
             FontAwesomeIcons.magnifyingGlass,
             size: MediaQuery.of(context).size.width * .06,
